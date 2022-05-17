@@ -4,7 +4,7 @@ float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeigh
 //
 void setup() {
   //
-  //Manditory: Mistaken display orientation should break app, feedback to console and CANVAS
+  //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
   fullScreen(); //displayWidth, displayHeight
   //
   //Population
@@ -17,7 +17,7 @@ void setup() {
 }//End setup
 //
 void draw() {
-  if ( draw==true ) line( mouseX, mouseY, pmouseX, pmouseY ) ; //End Line Draw
+  if ( draw==true && mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) line( mouseX, mouseY, pmouseX, pmouseY ) ; //End Line Draw
 }//End draw
 //
 void keyPressed() {
@@ -27,10 +27,10 @@ void mousePressed() {
   //Paper-Button
   if (mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight ) {
     if (draw == false) {
-    draw = true;
+      draw = true;
     } else {
-    draw = false;
-  }//End draw Boolean
+      draw = false;
+    }//End draw Boolean
   }//Button Paper (Drawing Surface)
 }//End mousePressed
 //
