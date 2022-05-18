@@ -3,9 +3,11 @@ Boolean draw=false;
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, quitButtonColour;
 String quitButtonString = "QUIT";
+String secondTextString = "Wahoo!";
 //
 PFont font;
 int initialFontSize=55;
@@ -21,6 +23,11 @@ void setup() {
   quitButtonY = displayHeight*0;
   quitButtonWidth = displayWidth*1/10; // 2/20=1/10
   quitButtonHeight = displayHeight*1/20;
+  //
+  secondTextX = quitButtonX;
+  secondTextY = displayHeight*1/20;
+  secondTextWidth = quitButtonWidth;
+  secondTextHeight = quitButtonHeight;
   //
   font = createFont ("Harrington", initialFontSize);
   //
@@ -54,7 +61,14 @@ void draw() {
   text(quitButtonString, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   //
   //Second Rectangle with More Text
+  fill(white); 
   rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
+  fill(black); //Ink
+  textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
+  //Values: [Left | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  size = 13; //Change until fits
+  textFont(font, size);
+  text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
 }//End draw
 //
 void keyPressed() {
