@@ -53,6 +53,8 @@ void draw() {
   textFont(font, size);
   text(quitButtonString, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   //
+  //Second Rectangle with More Text
+  rect();
 }//End draw
 //
 void keyPressed() {
