@@ -3,5 +3,7 @@ float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeigh
 Boolean paper=false;
 //
 void pieceOfPaper() {
+  fill(white);
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
+  paper=false;
 }//End pieceOfPaper
