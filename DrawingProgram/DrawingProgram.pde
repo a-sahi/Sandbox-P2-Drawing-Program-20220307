@@ -1,37 +1,18 @@
 //Global Variables
 Boolean draw=false;
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, quitButtonColour;
-String quitButtonString = "QUIT";
-String secondTextString = "Wahoo!";
-//
-PFont font;
-int initialFontSize=55;
-int size;
 //
 void setup() {
-  //
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
   fullScreen(); //displayWidth, displayHeight
-  //
   population();
-  quitButtonX = displayWidth*9/10; //18/20=9/10
-  quitButtonY = displayHeight*0;
-  quitButtonWidth = displayWidth*1/10; // 2/20=1/10
-  quitButtonHeight = displayHeight*1/20;
+  textSetup();
+  pieceOfPaper();
   //
-  secondTextX = quitButtonX;
-  secondTextY = displayHeight*1/20;
-  secondTextWidth = quitButtonWidth;
-  secondTextHeight = quitButtonHeight;
-  //
-  font = createFont ("Harrington", initialFontSize);
-  //
-  rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup
 //
 void draw() {
