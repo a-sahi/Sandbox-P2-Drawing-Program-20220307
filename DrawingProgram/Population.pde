@@ -1,7 +1,7 @@
 void population() {
   //
-  drawingSurfaceX = displayWidth*1/4;
-  drawingSurfaceY = displayHeight*0.5/5;
+  drawingSurfaceX = displayWidth*1/8;
+  drawingSurfaceY = displayHeight*0.8/5;
   drawingSurfaceWidth = displayWidth*3/4;
   drawingSurfaceHeight = displayHeight*4/5;
   drawingDiameter = displayWidth*1/100;
