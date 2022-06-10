@@ -40,6 +40,8 @@ void draw() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
+  fill(white);
+  rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   //
   //Text, Quit Button
   fill(black); //Ink
@@ -60,8 +62,6 @@ void draw() {
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
   //Colour Button
-  fill(white);
-  rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
 }//End draw
 //
 void keyPressed() {
