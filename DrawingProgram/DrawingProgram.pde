@@ -3,6 +3,7 @@ Boolean draw=false;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
+float colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour;
 //
@@ -52,6 +53,10 @@ void draw() {
   size = 13; //Change until fits
   textFont(font, size);
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
+  //
+  //Colour Button
+  fill(white);
+  rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
 }//End draw
 //
 void keyPressed() {

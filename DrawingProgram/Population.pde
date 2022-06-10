@@ -16,4 +16,8 @@ void population() {
   secondTextWidth = quitButtonWidth;
   secondTextHeight = quitButtonHeight;
   //
+  colourButtonX = displayWidth*1/26;
+  colourButtonY = displayHeight*5/20;
+  colourButtonWidth = displayWidth*1/17;
+  colourButtonHeight = displayHeight*1/20;
 }//End population
