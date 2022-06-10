@@ -42,7 +42,7 @@ void draw() {
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
   //Colour Button Start
-  fill(white);
+  fill(colourButtonColour);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   //Colour Button End
   //Text, Quit Button
