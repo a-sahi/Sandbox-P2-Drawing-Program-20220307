@@ -40,6 +40,7 @@ void draw() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
+  //
   fill(white);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   //
