@@ -59,6 +59,7 @@ void draw() {
     colourButtonColour = red;
   } else {
     colourButtonColour = grey;
+  }//End Colour Button Hoverover
   fill(white);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
 }//End draw
