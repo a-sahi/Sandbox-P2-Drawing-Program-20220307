@@ -30,6 +30,7 @@ void draw() {
   } else {
     quitButtonColour = grey;
   }//End Quit Button Hoverover
+  //Colour Button Hoverover
   if ( mouseX>=colourButtonX && mouseX<=colourButtonX+colourButtonWidth && mouseY>=colourButtonY && mouseY<=colourButtonY+colourButtonHeight ) {
     colourButtonColour = red;
   } else {
