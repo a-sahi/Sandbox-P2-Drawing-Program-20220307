@@ -40,10 +40,10 @@ void draw() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
-  //
+  //Colour Button Start
   fill(white);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
-  //
+  //Colour Button End
   //Text, Quit Button
   fill(black); //Ink
   textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
@@ -62,7 +62,6 @@ void draw() {
   textFont(font, size);
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
-  //Colour Button
 }//End draw
 //
 void keyPressed() {
