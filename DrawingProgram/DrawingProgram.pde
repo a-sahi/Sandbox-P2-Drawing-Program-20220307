@@ -5,7 +5,7 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 float colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight;
 int reset=1;
-color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour;
+color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour, colourButtonColour;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -55,6 +55,10 @@ void draw() {
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
   //Colour Button
+  if ( mouseX>=colourButtonX && mouseX<=colourButtonX+colourButtonWidth && mouseY>=colourButtonY && mouseY<=colourButtonY+colourButtonHeight ) {
+    colourButtonColour = red;
+  } else {
+    colourButtonColour = grey;
   fill(white);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
 }//End draw
