@@ -30,6 +30,11 @@ void draw() {
   } else {
     quitButtonColour = grey;
   }//End Quit Button Hoverover
+  if ( mouseX>=colourButtonX && mouseX<=colourButtonX+colourButtonWidth && mouseY>=colourButtonY && mouseY<=colourButtonY+colourButtonHeight ) {
+    colourButtonColour = red;
+  } else {
+    colourButtonColour = grey;
+  }//End Colour Button Hoverover
   fill(quitButtonColour);
   noStroke(); //removes rect() outline
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
@@ -55,11 +60,6 @@ void draw() {
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
   //Colour Button
-  if ( mouseX>=colourButtonX && mouseX<=colourButtonX+colourButtonWidth && mouseY>=colourButtonY && mouseY<=colourButtonY+colourButtonHeight ) {
-    colourButtonColour = red;
-  } else {
-    colourButtonColour = grey;
-  }//End Colour Button Hoverover
   fill(white);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
 }//End draw
