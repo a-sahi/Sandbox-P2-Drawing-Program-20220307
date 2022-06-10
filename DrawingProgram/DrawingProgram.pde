@@ -44,7 +44,7 @@ void draw() {
   //Colour Button Start
   fill(colourButtonColour);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
-  fill(reset);
+  fill(resetColour);
   //Colour Button End
   //Text, Quit Button
   fill(black); //Ink
