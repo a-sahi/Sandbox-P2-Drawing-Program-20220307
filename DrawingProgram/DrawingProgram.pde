@@ -4,8 +4,13 @@ Boolean draw=false;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 float colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight;
+float strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight;
+float backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight;
+float shapesButtonX, shapesButtonY, shapesButtonWidth, shapesButtonHeight;
+float templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight;
+float lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight;
 int reset=1;
-color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour, colourButtonColour;
+color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, lineButtonColour;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -30,22 +35,78 @@ void draw() {
   } else {
     quitButtonColour = grey;
   }//End Quit Button Hoverover
+  //
   //Colour Button Hoverover
   if ( mouseX>=colourButtonX && mouseX<=colourButtonX+colourButtonWidth && mouseY>=colourButtonY && mouseY<=colourButtonY+colourButtonHeight ) {
     colourButtonColour = red;
   } else {
     colourButtonColour = grey;
   }//End Colour Button Hoverover
+  //
+  //Stroke Button Hoverover
+  if ( mouseX>=strokeButtonX && mouseX<=strokeButtonX+strokeButtonWidth && mouseY>=strokeButtonY && mouseY<=strokeButtonY+strokeButtonHeight ) {
+    strokeButtonColour = red;
+  } else {
+    strokeButtonColour = grey;
+  }//End Stroke Button Hoverover
+  //
+  //Background Button Hoverover
+  if ( mouseX>=backgroundButtonX && mouseX<=backgroundButtonX+backgroundButtonWidth && mouseY>=backgroundButtonY && mouseY<=backgroundButtonY+backgroundButtonHeight ) {
+    backgroundButtonColour = red;
+  } else {
+    backgroundButtonColour = grey;
+  }//End Background Button Hoverover
+  //
+  //Shapes Button Hoverover
+  if ( mouseX>=shapesButtonX && mouseX<=shapesButtonX+shapesButtonWidth && mouseY>=shapesButtonY && mouseY<=shapesButtonY+shapesButtonHeight ) {
+    shapesButtonColour = red;
+  } else {
+    shapesButtonColour = grey;
+  }//End Shapes Button Hoverover
+  //
+  //Template Button Hoverover
+  if ( mouseX>=templateButtonX && mouseX<=templateButtonX+templateButtonWidth && mouseY>=templateButtonY && mouseY<=templateButtonY+templateButtonHeight ) {
+    templateButtonColour = red;
+  } else {
+    templateButtonColour = grey;
+  }//End Template Button Hoverover
+  //
+  //Line Button Hoverover
+  if ( mouseX>=lineButtonX && mouseX<=lineButtonX+lineButtonWidth && mouseY>=lineButtonY && mouseY<=lineButtonY+lineButtonHeight ) {
+    lineButtonColour = red;
+  } else {
+    lineButtonColour = grey;
+  }//End Line Button Hoverover
+  //
   fill(quitButtonColour);
   noStroke(); //removes rect() outline
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   stroke(reset);
   fill(resetColour); //White, not night mode friendly
-  //Colour Button Start
+  //Colour Button
   fill(colourButtonColour);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   fill(resetColour);
-  //Colour Button End
+  //Strokes Button
+  fill(strokeButtonColour);
+  rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
+  fill(resetColour);
+  //Background Button
+  fill(backgroundButtonColour);
+  rect(backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight);
+  fill(resetColour);
+  //Shapes Button
+  fill(shapesButtonColour);
+  rect(shapesButtonX, shapesButtonY, shapesButtonWidth, shapesButtonHeight);
+  fill(resetColour);
+  //Template Button
+  fill(templateButtonColour);
+  rect(templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight);
+  fill(resetColour);
+  //Line Button
+  fill(lineButtonColour);
+  rect(lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
+  fill(resetColour);
   //Text, Quit Button
   fill(black); //Ink
   textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
@@ -60,7 +121,7 @@ void draw() {
   fill(black); //Ink
   textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
   //Values: [Left | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  size = 13; //Change until fits
+  size = 30; //Change until fits
   textFont(font, size);
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //

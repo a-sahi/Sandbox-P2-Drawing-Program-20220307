@@ -17,7 +17,33 @@ void population() {
   secondTextHeight = quitButtonHeight;
   //
   colourButtonX = displayWidth*1/26;
-  colourButtonY = displayHeight*5/20;
+  colourButtonY = displayHeight*7/20;
   colourButtonWidth = displayWidth*1/17;
   colourButtonHeight = displayHeight*1/20;
+  //
+  strokeButtonX = displayWidth*1/26;
+  strokeButtonY = displayHeight*10/20;
+  strokeButtonWidth = displayWidth*1/17;
+  strokeButtonHeight = displayHeight*1/20;
+  //
+  backgroundButtonX = displayWidth*1/26;
+  backgroundButtonY = displayHeight*13/20;
+  backgroundButtonWidth = displayWidth*1/17;
+  backgroundButtonHeight = displayHeight*1/20;
+  //
+  shapesButtonX = displayWidth*23.7/26;
+  shapesButtonY = displayHeight*7/20;
+  shapesButtonWidth = displayWidth*1/17;
+  shapesButtonHeight = displayHeight*1/20;
+  //
+  templateButtonX = displayWidth*23.7/26;
+  templateButtonY = displayHeight*10/20;
+  templateButtonWidth = displayWidth*1/17;
+  templateButtonHeight = displayHeight*1/20;
+  //
+  lineButtonX = displayWidth*23.7/26;
+  lineButtonY = displayHeight*13/20;
+  lineButtonWidth = displayWidth*1/17;
+  lineButtonHeight = displayHeight*1/20;
+  //
 }//End population
