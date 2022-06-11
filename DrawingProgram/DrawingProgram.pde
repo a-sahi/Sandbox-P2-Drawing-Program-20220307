@@ -32,6 +32,12 @@ float darkgreen1X, darkgreen1Y;
 float skyblue1X, skyblue1Y;
 float darkblue1X, darkblue1Y;
 float purple1X, purple1Y;
+float magenta1X, magenta1Y;
+float pink1X, pink1Y;
+float brown1X, brown1Y;
+float white1X, white1Y;
+float grey1X, grey1Y;
+float black1X, black1Y;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, lineButtonColour;
 //
@@ -223,6 +229,30 @@ void draw() {
   //Background Purple
   fill(purple);
   rect(purple1X, purple1Y, colourWidth, colourHeight);
+  //
+  //Background Magenta
+  fill(magenta);
+  rect(magenta1X, magenta1Y, colourWidth, colourHeight);
+  //
+  //Background Pink
+  fill(pink);
+  rect(pink1X, pink1Y, colourWidth, colourHeight);
+  //
+  //Background Brown
+  fill(brown);
+  rect(brown1X, brown1Y, colourWidth, colourHeight);
+  //
+  //Background White
+  fill(white);
+  rect(white1X, white1Y, colourWidth, colourHeight);
+  //
+  //Background Grey
+  fill(grey);
+  rect(grey1X, grey1Y, colourWidth, colourHeight);
+  //
+  //Background Black
+  fill(black);
+  rect(black1X, black1Y, colourWidth, colourHeight);
   //
   //Text, Quit Button
   fill(black); //Ink

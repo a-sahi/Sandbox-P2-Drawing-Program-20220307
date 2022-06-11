@@ -118,8 +118,27 @@ void population() {
   darkblue1X = displayWidth*8.08/26;
   darkblue1Y = displayHeight*13/20;
   //
-  purple1X = displayWidth*8.96/26;
-  purple1Y = displayHeight*13/20;
+  purple1X = displayWidth*2.8/26;
+  purple1Y = displayHeight*13.53/20;
   colourWidth = displayWidth*1/30;
   colourHeight = displayHeight*1/40;
+  //
+  magenta1X = displayWidth*3.68/26;
+  magenta1Y = displayHeight*13.53/20;
+  //
+  pink1X = displayWidth*4.56/26;
+  pink1Y = displayHeight*13.53/20;
+  //
+  brown1X = displayWidth*5.44/26;
+  brown1Y = displayHeight*13.53/20;
+  //
+  white1X = displayWidth*6.32/26;
+  white1Y = displayHeight*13.53/20;
+  //
+  grey1X = displayWidth*7.2/26;
+  grey1Y = displayHeight*13.53/20;
+  //
+  black1X = displayWidth*8.08/26;
+  black1Y = displayHeight*13.53/20;
+  //
 }//End population
