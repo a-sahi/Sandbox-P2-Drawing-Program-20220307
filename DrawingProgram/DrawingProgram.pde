@@ -9,8 +9,31 @@ float backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundBut
 float shapesButtonX, shapesButtonY, shapesButtonWidth, shapesButtonHeight;
 float templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight;
 float lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight;
+float redX, redY, colourWidth, colourHeight;
+float orangeX, orangeY;
+float yellowX, yellowY;
+float lightgreenX, lightgreenY;
+float darkgreenX, darkgreenY;
+float skyblueX, skyblueY;
+float darkblueX, darkblueY;
+float purpleX, purpleY;
+float magentaX, magentaY;
+float pinkX, pinkY;
+float brownX, brownY;
+float whiteX, whiteY;
+float greyX, greyY;
+float blackX, blackY;
+float eraserX, eraserY, eraserWidth, eraserHeight;
+float red1X, red1Y;
+float orange1X, orange1Y;
+float yellow1X, yellow1Y;
+float lightgreen1X, lightgreen1Y;
+float darkgreen1X, darkgreen1Y;
+float skyblue1X, skyblue1Y;
+float darkblue1X, darkblue1Y;
+float purple1X, purple1Y;
 int reset=1;
-color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, lineButtonColour;
+color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, lineButtonColour;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -107,6 +130,100 @@ void draw() {
   fill(lineButtonColour);
   rect(lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
   fill(resetColour);
+  //
+  //Colour Red
+  fill(red);
+  rect(redX, redY, colourWidth, colourHeight);
+  //
+  //Colour Orange
+  fill(orange);
+  rect(orangeX, orangeY, colourWidth, colourHeight);
+  //
+  //Colour Yellow
+  fill(yellow);
+  rect(yellowX, yellowY, colourWidth, colourHeight);
+  //
+  //Colour Light Green
+  fill(lightgreen);
+  rect(lightgreenX, lightgreenY, colourWidth, colourHeight);
+  //
+  //Colour Dark Green
+  fill(darkgreen);
+  rect(darkgreenX, darkgreenY, colourWidth, colourHeight);
+  //
+  //Colour Sky Blue
+  fill(skyblue);
+  rect(skyblueX, skyblueY, colourWidth, colourHeight);
+  //
+  //Colour Dark Blue
+  fill(darkblue);
+  rect(darkblueX, darkblueY, colourWidth, colourHeight);
+  //
+  //Colour Purple
+  fill(purple);
+  rect(purpleX, purpleY, colourWidth, colourHeight);
+  //
+  //Colour Magenta
+  fill(magenta);
+  rect(magentaX, magentaY, colourWidth, colourHeight);
+  //
+  //Colour Pink
+  fill(pink);
+  rect(pinkX, pinkY, colourWidth, colourHeight);
+  //
+  //Colour Brown
+  fill(brown);
+  rect(brownX, brownY, colourWidth, colourHeight);
+  //
+  //Colour White
+  fill(white);
+  rect(whiteX, whiteY, colourWidth, colourHeight);
+  //
+  //Colour Grey
+  fill(grey);
+  rect(greyX, greyY, colourWidth, colourHeight);
+  //
+  //Colour Black
+  fill(black);
+  rect(blackX, blackY, colourWidth, colourHeight);
+  //
+  //Colour Eraser
+  fill(white);
+  rect(eraserX, eraserY, eraserWidth, eraserHeight);
+  fill(resetColour);
+  //
+  //Background Red
+  fill(red);
+  rect(red1X, red1Y, colourWidth, colourHeight);
+  //
+  //Background Orange
+  fill(orange);
+  rect(orange1X, orange1Y, colourWidth, colourHeight);
+  //
+  //Background Yellow
+  fill(yellow);
+  rect(yellow1X, yellow1Y, colourWidth, colourHeight);
+  //
+  //Background Light Green
+  fill(lightgreen);
+  rect(lightgreen1X, lightgreen1Y, colourWidth, colourHeight);
+  //
+  //Background Dark Green
+  fill(darkgreen);
+  rect(darkgreen1X, darkgreen1Y, colourWidth, colourHeight);
+  //
+  //Background Sky Blue
+  fill(skyblue);
+  rect(skyblue1X, skyblue1Y, colourWidth, colourHeight);
+  //
+  //Background Dark Blue
+  fill(darkblue);
+  rect(darkblue1X, darkblue1Y, colourWidth, colourHeight);
+  //
+  //Background Purple
+  fill(purple);
+  rect(purple1X, purple1Y, colourWidth, colourHeight);
+  //
   //Text, Quit Button
   fill(black); //Ink
   textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference

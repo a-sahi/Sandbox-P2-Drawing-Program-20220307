@@ -46,4 +46,80 @@ void population() {
   lineButtonWidth = displayWidth*1.5/17;
   lineButtonHeight = displayHeight*1/20;
   //
+  redX = displayWidth*2.8/26;
+  redY = displayHeight*7/20;
+  colourWidth = displayWidth*1/30;
+  colourHeight = displayHeight*1/40;
+  //
+  orangeX = displayWidth*3.68/26;
+  orangeY = displayHeight*7/20;
+  //
+  yellowX = displayWidth*4.56/26;
+  yellowY = displayHeight*7/20;
+  //
+  lightgreenX = displayWidth*5.44/26;
+  lightgreenY = displayHeight*7/20;
+  //
+  darkgreenX = displayWidth*6.32/26;
+  darkgreenY = displayHeight*7/20;
+  //
+  skyblueX = displayWidth*7.2/26;
+  skyblueY = displayHeight*7/20;
+  //
+  darkblueX = displayWidth*8.08/26;
+  darkblueY = displayHeight*7/20;
+  //
+  purpleX = displayWidth*2.8/26;
+  purpleY = displayHeight*7.53/20;
+  colourWidth = displayWidth*1/30;
+  colourHeight = displayHeight*1/40;
+  //
+  magentaX = displayWidth*3.68/26;
+  magentaY = displayHeight*7.53/20;
+  //
+  pinkX = displayWidth*4.56/26;
+  pinkY = displayHeight*7.53/20;
+  //
+  brownX = displayWidth*5.44/26;
+  brownY = displayHeight*7.53/20;
+  //
+  whiteX = displayWidth*6.32/26;
+  whiteY = displayHeight*7.53/20;
+  //
+  greyX = displayWidth*7.2/26;
+  greyY = displayHeight*7.53/20;
+  //
+  blackX = displayWidth*8.08/26;
+  blackY = displayHeight*7.53/20;
+  //
+  eraserX = displayWidth*8.96/26;
+  eraserY = displayHeight*7/20;
+  eraserWidth = displayWidth*1/30;
+  eraserHeight = displayHeight*2.1/40;
+  //
+  red1X = displayWidth*2.8/26;
+  red1Y = displayHeight*13/20;
+  //
+  orange1X = displayWidth*3.68/26;
+  orange1Y = displayHeight*13/20;
+  //
+  yellow1X = displayWidth*4.56/26;
+  yellow1Y = displayHeight*13/20;
+  //
+  lightgreen1X = displayWidth*5.44/26;
+  lightgreen1Y = displayHeight*13/20;
+  //
+  darkgreen1X = displayWidth*6.32/26;
+  darkgreen1Y = displayHeight*13/20;
+  //
+  skyblue1X = displayWidth*7.2/26;
+  skyblue1Y = displayHeight*13/20;
+  //
+  darkblue1X = displayWidth*8.08/26;
+  darkblue1Y = displayHeight*13/20;
+  //
+  purple1X = displayWidth*8.96/26;
+  purple1Y = displayHeight*13/20;
+  colourWidth = displayWidth*1/30;
+  colourHeight = displayHeight*1/40;
 }//End population
