@@ -87,7 +87,7 @@ void draw() {
   fill(colourButtonColour);
   rect(colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
   fill(resetColour);
-  //Strokes Button
+  //Stroke Button
   fill(strokeButtonColour);
   rect(strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
   fill(resetColour);
@@ -124,6 +124,48 @@ void draw() {
   size = 30; //Change until fits
   textFont(font, size);
   text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
+  //
+  //Text, Colour Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(colourButtonString, colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight);
+  //
+  //Text, Stroke Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(strokeButtonString, strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight);
+  //
+  //Text, Background Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(backgroundButtonString, backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight);
+  //
+  //Text, Shapes Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(shapesButtonString, shapesButtonX, shapesButtonY, shapesButtonWidth, shapesButtonHeight);
+  //
+  //Text, Template Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(templateButtonString, templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight);
+  //
+  //Text, Line Button
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 30; //Change until fits
+  textFont(font, size);
+  text(lineButtonString, lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
   //
 }//End draw
 //

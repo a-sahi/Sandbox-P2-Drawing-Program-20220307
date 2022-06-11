@@ -16,34 +16,34 @@ void population() {
   secondTextWidth = quitButtonWidth;
   secondTextHeight = quitButtonHeight;
   //
-  colourButtonX = displayWidth*1/26;
+  colourButtonX = displayWidth*0.5/26;
   colourButtonY = displayHeight*7/20;
-  colourButtonWidth = displayWidth*1/17;
+  colourButtonWidth = displayWidth*1.5/17;
   colourButtonHeight = displayHeight*1/20;
   //
-  strokeButtonX = displayWidth*1/26;
+  strokeButtonX = displayWidth*0.5/26;
   strokeButtonY = displayHeight*10/20;
-  strokeButtonWidth = displayWidth*1/17;
+  strokeButtonWidth = displayWidth*1.5/17;
   strokeButtonHeight = displayHeight*1/20;
   //
-  backgroundButtonX = displayWidth*1/26;
+  backgroundButtonX = displayWidth*0.5/26;
   backgroundButtonY = displayHeight*13/20;
-  backgroundButtonWidth = displayWidth*1/17;
+  backgroundButtonWidth = displayWidth*1.5/17;
   backgroundButtonHeight = displayHeight*1/20;
   //
-  shapesButtonX = displayWidth*23.7/26;
+  shapesButtonX = displayWidth*23.3/26;
   shapesButtonY = displayHeight*7/20;
-  shapesButtonWidth = displayWidth*1/17;
+  shapesButtonWidth = displayWidth*1.5/17;
   shapesButtonHeight = displayHeight*1/20;
   //
-  templateButtonX = displayWidth*23.7/26;
+  templateButtonX = displayWidth*23.3/26;
   templateButtonY = displayHeight*10/20;
-  templateButtonWidth = displayWidth*1/17;
+  templateButtonWidth = displayWidth*1.5/17;
   templateButtonHeight = displayHeight*1/20;
   //
-  lineButtonX = displayWidth*23.7/26;
+  lineButtonX = displayWidth*23.3/26;
   lineButtonY = displayHeight*13/20;
-  lineButtonWidth = displayWidth*1/17;
+  lineButtonWidth = displayWidth*1.5/17;
   lineButtonHeight = displayHeight*1/20;
   //
 }//End population
