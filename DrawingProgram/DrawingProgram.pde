@@ -37,8 +37,10 @@ float brown1X, brown1Y;
 float white1X, white1Y;
 float grey1X, grey1Y;
 float black1X, black1Y;
+float template1X, template1Y, templateWidth, templateHeight, template2X, template2Y, template3X, template3Y;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, resetButtonColour;
+PImage img1, img2, img3, img4;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -162,6 +164,10 @@ void draw() {
   fill(darkblue);
   rect(darkblueX, darkblueY, colourWidth, colourHeight);
   //
+  fill(white);
+  rect(eraserX, eraserY, eraserWidth, eraserHeight);
+  image(img1, eraserX, eraserY, eraserWidth, eraserHeight);
+  //
   //Colour Purple
   fill(purple);
   rect(purpleX, purpleY, colourWidth, colourHeight);
@@ -190,11 +196,13 @@ void draw() {
   fill(black);
   rect(blackX, blackY, colourWidth, colourHeight);
   //
+  /*
   //Colour Eraser
   fill(white);
   rect(eraserX, eraserY, eraserWidth, eraserHeight);
   fill(resetColour);
   //
+  */
   //Background Red
   fill(red);
   rect(red1X, red1Y, colourWidth, colourHeight);
@@ -303,6 +311,14 @@ void draw() {
   textFont(font, size);
   text(resetButtonString, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
   //
+  //
+  fill(white);
+  rect(template1X, template1Y, templateWidth, templateHeight);
+  image(img2, template1X, template1Y, templateWidth, templateHeight);
+  rect(template2X, template2Y, templateWidth, templateHeight);
+  image(img3, template2X, template2Y, templateWidth, templateHeight);
+  rect(template3X, template3Y, templateWidth, templateHeight);
+  image(img4, template3X, template3Y, templateWidth, templateHeight);
 }//End draw
 //
 void keyPressed() {

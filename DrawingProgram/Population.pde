@@ -136,4 +136,18 @@ void population() {
   black1X = displayWidth*8.08/26;
   black1Y = displayHeight*13.53/20;
   //
+  img1 = loadImage("eraser.png");
+  img2 = loadImage("flower.png");
+  img3 = loadImage("tumblr-sketch-coloring-page-circle.png");
+  img4 = loadImage("butterfly.png");
+  //
+  template1X = displayWidth*20.66/26;
+  template1Y = template2Y = template3Y = displayHeight*10/20;
+  templateWidth = displayWidth*1/30;
+  templateHeight = displayHeight*1/20;
+  //
+  template2X = displayWidth*21.54/26;
+  //
+  template3X = displayWidth*22.42/26;
+  
 }//End population
