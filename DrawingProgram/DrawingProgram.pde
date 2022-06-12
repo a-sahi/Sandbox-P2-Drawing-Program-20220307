@@ -98,7 +98,7 @@ void draw() {
   } else {
     templateButtonColour = grey;
     //
-  //Reset Button Hoverover
+  }//Reset Button Hoverover
   if ( mouseX>=resetButtonX && mouseX<=resetButtonX+resetButtonWidth && mouseY>=resetButtonY && mouseY<=resetButtonY+resetButtonHeight ) {
     resetButtonColour = red;
   } else {
@@ -302,7 +302,6 @@ void draw() {
   size = 30; //Change until fits
   textFont(font, size);
   text(resetButtonString, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
-  }
   //
 }//End draw
 //
