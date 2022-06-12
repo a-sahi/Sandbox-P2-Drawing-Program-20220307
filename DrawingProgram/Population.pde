@@ -11,11 +11,6 @@ void population() {
   quitButtonWidth = displayWidth*1/10; // 2/20=1/10
   quitButtonHeight = displayHeight*1/20;
   //
-  secondTextX = quitButtonX;
-  secondTextY = displayHeight*1/20;
-  secondTextWidth = quitButtonWidth;
-  secondTextHeight = quitButtonHeight;
-  //
   colourButtonX = displayWidth*0.5/26;
   colourButtonY = displayHeight*7/20;
   colourButtonWidth = displayWidth*1.5/17;
@@ -41,10 +36,10 @@ void population() {
   templateButtonWidth = displayWidth*1.5/17;
   templateButtonHeight = displayHeight*1/20;
   //
-  lineButtonX = displayWidth*23.3/26;
-  lineButtonY = displayHeight*13/20;
-  lineButtonWidth = displayWidth*1.5/17;
-  lineButtonHeight = displayHeight*1/20;
+  resetButtonX = displayWidth*23.3/26;
+  resetButtonY = displayHeight*13/20;
+  resetButtonWidth = displayWidth*1.5/17;
+  resetButtonHeight = displayHeight*1/20;
   //
   redX = displayWidth*2.8/26;
   redY = displayHeight*7/20;

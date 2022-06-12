@@ -2,13 +2,12 @@
 Boolean draw=false;
 //
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-float secondTextX, secondTextY, secondTextWidth, secondTextHeight;
 float colourButtonX, colourButtonY, colourButtonWidth, colourButtonHeight;
 float strokeButtonX, strokeButtonY, strokeButtonWidth, strokeButtonHeight;
 float backgroundButtonX, backgroundButtonY, backgroundButtonWidth, backgroundButtonHeight;
 float shapesButtonX, shapesButtonY, shapesButtonWidth, shapesButtonHeight;
 float templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight;
-float lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight;
+float resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight;
 float redX, redY, colourWidth, colourHeight;
 float orangeX, orangeY;
 float yellowX, yellowY;
@@ -39,7 +38,7 @@ float white1X, white1Y;
 float grey1X, grey1Y;
 float black1X, black1Y;
 int reset=1;
-color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, lineButtonColour;
+color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, resetButtonColour;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
@@ -98,14 +97,13 @@ void draw() {
     templateButtonColour = red;
   } else {
     templateButtonColour = grey;
-  }//End Template Button Hoverover
-  //
-  //Line Button Hoverover
-  if ( mouseX>=lineButtonX && mouseX<=lineButtonX+lineButtonWidth && mouseY>=lineButtonY && mouseY<=lineButtonY+lineButtonHeight ) {
-    lineButtonColour = red;
+    //
+  //Reset Button Hoverover
+  if ( mouseX>=resetButtonX && mouseX<=resetButtonX+resetButtonWidth && mouseY>=resetButtonY && mouseY<=resetButtonY+resetButtonHeight ) {
+    resetButtonColour = red;
   } else {
-    lineButtonColour = grey;
-  }//End Line Button Hoverover
+    resetButtonColour = grey;
+  }//End Reset Button Hoverover
   //
   fill(quitButtonColour);
   noStroke(); //removes rect() outline
@@ -132,10 +130,9 @@ void draw() {
   fill(templateButtonColour);
   rect(templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight);
   fill(resetColour);
-  //Line Button
-  fill(lineButtonColour);
-  rect(lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
-  fill(resetColour);
+  //Reset Button
+  fill(resetButtonColour); 
+  rect(resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
   //
   //Colour Red
   fill(red);
@@ -253,6 +250,7 @@ void draw() {
   //Background Black
   fill(black);
   rect(black1X, black1Y, colourWidth, colourHeight);
+  fill(resetColour);
   //
   //Text, Quit Button
   fill(black); //Ink
@@ -261,16 +259,6 @@ void draw() {
   size = 30; //Change until fits
   textFont(font, size);
   text(quitButtonString, quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
-  //
-  //Second Rectangle with More Text
-  fill(white); 
-  rect(secondTextX, secondTextY, secondTextWidth, secondTextHeight);
-  fill(black); //Ink
-  textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
-  //Values: [Left | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  size = 30; //Change until fits
-  textFont(font, size);
-  text(secondTextString, secondTextX, secondTextY, secondTextWidth, secondTextHeight);
   //
   //Text, Colour Button
   fill(black); //Ink
@@ -307,12 +295,14 @@ void draw() {
   textFont(font, size);
   text(templateButtonString, templateButtonX, templateButtonY, templateButtonWidth, templateButtonHeight);
   //
-  //Text, Line Button
+  //Text, Reset Button
   fill(black); //Ink
-  textAlign (CENTER, CENTER);
+  textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
+  //Values: [Left | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
   size = 30; //Change until fits
   textFont(font, size);
-  text(lineButtonString, lineButtonX, lineButtonY, lineButtonWidth, lineButtonHeight);
+  text(resetButtonString, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
+  }
   //
 }//End draw
 //
@@ -331,7 +321,7 @@ void mousePressed() {
   //
   if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight ) exit();
   //
-  if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) pieceOfPaper(); //paper=true;
+  if ( mouseX>=resetButtonX && mouseX<=resetButtonX+resetButtonWidth && mouseY>=resetButtonY && mouseY<=resetButtonY+resetButtonHeight ) pieceOfPaper(); //paper=true;
   //
 }//End mousePressed
 //
