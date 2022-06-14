@@ -12,17 +12,17 @@ void population() {
   quitButtonHeight = displayHeight*1/20;
   //
   colourButtonX = displayWidth*0.5/26;
-  colourButtonY = displayHeight*7/20;
+  colourButtonY = displayHeight*4/15;
   colourButtonWidth = displayWidth*1.5/17;
   colourButtonHeight = displayHeight*1/20;
   //
   strokeButtonX = displayWidth*0.5/26;
-  strokeButtonY = displayHeight*10/20;
+  strokeButtonY = displayHeight*8/15;
   strokeButtonWidth = displayWidth*1.5/17;
   strokeButtonHeight = displayHeight*1/20;
   //
   backgroundButtonX = displayWidth*0.5/26;
-  backgroundButtonY = displayHeight*13/20;
+  backgroundButtonY = displayHeight*4/5;
   backgroundButtonWidth = displayWidth*1.5/17;
   backgroundButtonHeight = displayHeight*1/20;
   //
@@ -41,56 +41,56 @@ void population() {
   resetButtonWidth = displayWidth*1.5/17;
   resetButtonHeight = displayHeight*1/20;
   //
-  redX = displayWidth*2.8/26;
-  redY = displayHeight*7/20;
+  redX = displayWidth*0.5/34;
+  redY = displayHeight*6.36/20;
   colourWidth = displayWidth*1/30;
   colourHeight = displayHeight*1/40;
   //
-  orangeX = displayWidth*3.68/26;
-  orangeY = displayHeight*7/20;
+  orangeX = displayWidth*1.56/34;
+  orangeY = displayHeight*6.36/20;
   //
-  yellowX = displayWidth*4.56/26;
-  yellowY = displayHeight*7/20;
+  yellowX = displayWidth*2.7/34;
+  yellowY = displayHeight*6.36/20;
   //
-  lightgreenX = displayWidth*5.44/26;
-  lightgreenY = displayHeight*7/20;
+  lightgreenX = displayWidth*0.5/34;
+  lightgreenY = displayHeight*6.86/20;
   //
-  darkgreenX = displayWidth*6.32/26;
-  darkgreenY = displayHeight*7/20;
+  darkgreenX = displayWidth*1.56/34;
+  darkgreenY = displayHeight*6.86/20;
   //
-  skyblueX = displayWidth*7.2/26;
-  skyblueY = displayHeight*7/20;
+  skyblueX = displayWidth*2.7/34;
+  skyblueY = displayHeight*6.86/20;
   //
-  darkblueX = displayWidth*8.08/26;
-  darkblueY = displayHeight*7/20;
+  darkblueX = displayWidth*0.5/34;
+  darkblueY = displayHeight*7.36/20;
   //
-  purpleX = displayWidth*2.8/26;
-  purpleY = displayHeight*7.53/20;
+  purpleX = displayWidth*1.56/34;
+  purpleY = displayHeight*7.36/20;
   colourWidth = displayWidth*1/30;
   colourHeight = displayHeight*1/40;
   //
-  magentaX = displayWidth*3.68/26;
-  magentaY = displayHeight*7.53/20;
+  magentaX = displayWidth*2.7/34;
+  magentaY = displayHeight*7.36/20;
   //
-  pinkX = displayWidth*4.56/26;
-  pinkY = displayHeight*7.53/20;
+  pinkX = displayWidth*0.5/34;
+  pinkY = displayHeight*7.86/20;
   //
-  brownX = displayWidth*5.44/26;
-  brownY = displayHeight*7.53/20;
+  brownX = displayWidth*1.56/34;
+  brownY = displayHeight*7.86/20;
   //
-  whiteX = displayWidth*6.32/26;
-  whiteY = displayHeight*7.53/20;
+  whiteX = displayWidth*2.7/34;
+  whiteY = displayHeight*7.86/20;
   //
-  greyX = displayWidth*7.2/26;
-  greyY = displayHeight*7.53/20;
+  greyX = displayWidth*0.5/34;
+  greyY = displayHeight*8.36/20;
   //
-  blackX = displayWidth*8.08/26;
-  blackY = displayHeight*7.53/20;
+  blackX = displayWidth*1.56/34;
+  blackY = displayHeight*8.36/20;
   //
-  eraserX = displayWidth*8.96/26;
-  eraserY = displayHeight*7/20;
+  eraserX = displayWidth*2.7/34;
+  eraserY = displayHeight*8.36/20;
   eraserWidth = displayWidth*1/30;
-  eraserHeight = displayHeight*2.1/40;
+  eraserHeight = displayHeight*1/40;
   //
   red1X = displayWidth*2.8/26;
   red1Y = displayHeight*13/20;
