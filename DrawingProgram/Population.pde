@@ -41,103 +41,35 @@ void population() {
   resetButtonWidth = displayWidth*1.5/17;
   resetButtonHeight = displayHeight*1/20;
   //
-  redX = displayWidth*0.5/34;
-  redY = displayHeight*6.36/20;
-  colourWidth = displayWidth*1/30;
-  colourHeight = displayHeight*1/40;
+  redX = lightgreenX = darkblueX = pinkX = greyX = red1X = lightgreen1X = darkblue1X = pink1X = grey1X = displayWidth*0.5/34;
   //
-  orangeX = displayWidth*1.56/34;
-  orangeY = displayHeight*6.36/20;
+  colourWidth = eraserWidth = displayWidth*1/30;
   //
-  yellowX = displayWidth*2.7/34;
-  yellowY = displayHeight*6.36/20;
+  colourHeight = eraserHeight = displayHeight*1/40;
   //
-  lightgreenX = displayWidth*0.5/34;
-  lightgreenY = displayHeight*6.86/20;
+  orangeX = darkgreenX = purpleX = brownX = blackX = orange1X = darkgreen1X = purple1X = brown1X = black1X = displayWidth*1.56/34;
   //
-  darkgreenX = displayWidth*1.56/34;
-  darkgreenY = displayHeight*6.86/20;
+  yellowX = skyblueX = magentaX = whiteX = eraserX = yellow1X = skyblue1X = magenta1X = white1X = randomX = displayWidth*2.7/34;
   //
-  skyblueX = displayWidth*2.7/34;
-  skyblueY = displayHeight*6.86/20;
+  redY = orangeY = yellowY = displayHeight*6.36/20;
   //
-  darkblueX = displayWidth*0.5/34;
-  darkblueY = displayHeight*7.36/20;
+  lightgreenY = darkgreenY = skyblueY = displayHeight*6.86/20;
   //
-  purpleX = displayWidth*1.56/34;
-  purpleY = displayHeight*7.36/20;
-  colourWidth = displayWidth*1/30;
-  colourHeight = displayHeight*1/40;
+  darkblueY = purpleY = magentaY = displayHeight*7.36/20;
   //
-  magentaX = displayWidth*2.7/34;
-  magentaY = displayHeight*7.36/20;
+  pinkY = brownY = whiteY = displayHeight*7.86/20;
   //
-  pinkX = displayWidth*0.5/34;
-  pinkY = displayHeight*7.86/20;
+  greyY = blackY = eraserY = displayHeight*8.36/20;
   //
-  brownX = displayWidth*1.56/34;
-  brownY = displayHeight*7.86/20;
+  red1Y = orange1Y = yellow1Y = displayHeight*17/20;
   //
-  whiteX = displayWidth*2.7/34;
-  whiteY = displayHeight*7.86/20;
+  lightgreen1Y = darkgreen1Y = skyblue1Y = displayHeight*17.5/20;
   //
-  greyX = displayWidth*0.5/34;
-  greyY = displayHeight*8.36/20;
+  darkblue1Y = purple1Y = magenta1Y = displayHeight*18/20;
   //
-  blackX = displayWidth*1.56/34;
-  blackY = displayHeight*8.36/20;
+  pink1Y = brown1Y = white1Y = displayHeight*18.5/20;
   //
-  eraserX = displayWidth*2.7/34;
-  eraserY = displayHeight*8.36/20;
-  eraserWidth = displayWidth*1/30;
-  eraserHeight = displayHeight*1/40;
-  //
-  red1X = displayWidth*0.5/34;
-  red1Y = displayHeight*17/20;
-  //
-  orange1X = displayWidth*1.56/34;
-  orange1Y = displayHeight*17/20;
-  //
-  yellow1X = displayWidth*2.7/34;
-  yellow1Y = displayHeight*17/20;
-  //
-  lightgreen1X = displayWidth*0.5/34;
-  lightgreen1Y = displayHeight*17.5/20;
-  //
-  darkgreen1X = displayWidth*1.56/34;
-  darkgreen1Y = displayHeight*17.5/20;
-  //
-  skyblue1X = displayWidth*2.7/34;
-  skyblue1Y = displayHeight*17.5/20;
-  //
-  darkblue1X = displayWidth*0.5/34;
-  darkblue1Y = displayHeight*18/20;
-  //
-  purple1X = displayWidth*1.56/34;
-  purple1Y = displayHeight*18/20;
-  colourWidth = displayWidth*1/30;
-  colourHeight = displayHeight*1/40;
-  //
-  magenta1X = displayWidth*2.7/34;
-  magenta1Y = displayHeight*18/20;
-  //
-  pink1X = displayWidth*0.5/34;
-  pink1Y = displayHeight*18.5/20;
-  //
-  brown1X = displayWidth*1.56/34;
-  brown1Y = displayHeight*18.5/20;
-  //
-  white1X = displayWidth*2.7/34;
-  white1Y = displayHeight*18.5/20;
-  //
-  grey1X = displayWidth*0.5/34;
-  grey1Y = displayHeight*19/20;
-  //
-  black1X = displayWidth*1.56/34;
-  black1Y = displayHeight*19/20;
-  //
-  randomX = displayWidth*2.7/34;
-  randomY = displayHeight*19/20;
+  grey1Y = black1Y = randomY = displayHeight*19/20;
   //
   img1 = loadImage("eraser.png");
   img2 = loadImage("flower.png");
@@ -146,8 +78,8 @@ void population() {
   //
   template1X = displayWidth*23.15/26;
   template1Y = template2Y = template3Y = displayHeight*11.7/20;
-  templateWidth = displayWidth*1/30;
-  templateHeight = displayHeight*1/20;
+  templateWidth = displayWidth*1/15;
+  templateHeight = displayHeight*1/10;
   //
   template2X = displayWidth*24.03/26;
   //
