@@ -37,6 +37,7 @@ float brown1X, brown1Y;
 float white1X, white1Y;
 float grey1X, grey1Y;
 float black1X, black1Y;
+float randomX, randomY;
 float template1X, template1Y, templateWidth, templateHeight, template2X, template2Y, template3X, template3Y;
 int reset=1;
 color white=255, resetColour=white, red=#FF0303, black=0, grey=#BCB6B6, orange=#FFA91C, yellow=#FFF41C, lightgreen=#5AE317, darkgreen=#1A893A, skyblue=#78E7FC, darkblue=#2955FF, purple=#7A00FF, magenta=#D616F5, pink=#FA9AC8, brown=#A26736, quitButtonColour, colourButtonColour, strokeButtonColour, backgroundButtonColour, shapesButtonColour, templateButtonColour, resetButtonColour;
@@ -260,6 +261,11 @@ void draw() {
   rect(black1X, black1Y, colourWidth, colourHeight);
   fill(resetColour);
   //
+  //Random Background
+  fill(white);
+  rect(randomX, randomY, colourWidth, colourHeight);
+  fill(resetColour);
+  //
   //Text, Quit Button
   fill(black); //Ink
   textAlign (CENTER, CENTER); //Align X&Y see Processing.org / Reference
@@ -311,6 +317,12 @@ void draw() {
   textFont(font, size);
   text(resetButtonString, resetButtonX, resetButtonY, resetButtonWidth, resetButtonHeight);
   //
+  //Text, Background Random
+  fill(black); //Ink
+  textAlign (CENTER, CENTER);
+  size = 15;
+  textFont(font, size);
+  text(randomString, randomX, randomY, colourWidth, colourHeight);
   //
   fill(white);
   rect(template1X, template1Y, templateWidth, templateHeight);

@@ -8,6 +8,7 @@ String backgroundButtonString = "Background";
 String shapesButtonString = "Shapes";
 String templateButtonString = "Template";
 String resetButtonString = "Reset";
+String randomString = "Random";
 //
 void textSetup() {
   font = createFont ("Harrington", initialFontSize);

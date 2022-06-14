@@ -27,17 +27,17 @@ void population() {
   backgroundButtonHeight = displayHeight*1/20;
   //
   shapesButtonX = displayWidth*23.3/26;
-  shapesButtonY = displayHeight*7/20;
+  shapesButtonY = displayHeight*4/15;
   shapesButtonWidth = displayWidth*1.5/17;
   shapesButtonHeight = displayHeight*1/20;
   //
   templateButtonX = displayWidth*23.3/26;
-  templateButtonY = displayHeight*10/20;
+  templateButtonY = displayHeight*8/15;
   templateButtonWidth = displayWidth*1.5/17;
   templateButtonHeight = displayHeight*1/20;
   //
   resetButtonX = displayWidth*23.3/26;
-  resetButtonY = displayHeight*13/20;
+  resetButtonY = displayHeight*4/5;
   resetButtonWidth = displayWidth*1.5/17;
   resetButtonHeight = displayHeight*1/20;
   //
@@ -92,62 +92,65 @@ void population() {
   eraserWidth = displayWidth*1/30;
   eraserHeight = displayHeight*1/40;
   //
-  red1X = displayWidth*2.8/26;
-  red1Y = displayHeight*13/20;
+  red1X = displayWidth*0.5/34;
+  red1Y = displayHeight*17/20;
   //
-  orange1X = displayWidth*3.68/26;
-  orange1Y = displayHeight*13/20;
+  orange1X = displayWidth*1.56/34;
+  orange1Y = displayHeight*17/20;
   //
-  yellow1X = displayWidth*4.56/26;
-  yellow1Y = displayHeight*13/20;
+  yellow1X = displayWidth*2.7/34;
+  yellow1Y = displayHeight*17/20;
   //
-  lightgreen1X = displayWidth*5.44/26;
-  lightgreen1Y = displayHeight*13/20;
+  lightgreen1X = displayWidth*0.5/34;
+  lightgreen1Y = displayHeight*17.5/20;
   //
-  darkgreen1X = displayWidth*6.32/26;
-  darkgreen1Y = displayHeight*13/20;
+  darkgreen1X = displayWidth*1.56/34;
+  darkgreen1Y = displayHeight*17.5/20;
   //
-  skyblue1X = displayWidth*7.2/26;
-  skyblue1Y = displayHeight*13/20;
+  skyblue1X = displayWidth*2.7/34;
+  skyblue1Y = displayHeight*17.5/20;
   //
-  darkblue1X = displayWidth*8.08/26;
-  darkblue1Y = displayHeight*13/20;
+  darkblue1X = displayWidth*0.5/34;
+  darkblue1Y = displayHeight*18/20;
   //
-  purple1X = displayWidth*2.8/26;
-  purple1Y = displayHeight*13.53/20;
+  purple1X = displayWidth*1.56/34;
+  purple1Y = displayHeight*18/20;
   colourWidth = displayWidth*1/30;
   colourHeight = displayHeight*1/40;
   //
-  magenta1X = displayWidth*3.68/26;
-  magenta1Y = displayHeight*13.53/20;
+  magenta1X = displayWidth*2.7/34;
+  magenta1Y = displayHeight*18/20;
   //
-  pink1X = displayWidth*4.56/26;
-  pink1Y = displayHeight*13.53/20;
+  pink1X = displayWidth*0.5/34;
+  pink1Y = displayHeight*18.5/20;
   //
-  brown1X = displayWidth*5.44/26;
-  brown1Y = displayHeight*13.53/20;
+  brown1X = displayWidth*1.56/34;
+  brown1Y = displayHeight*18.5/20;
   //
-  white1X = displayWidth*6.32/26;
-  white1Y = displayHeight*13.53/20;
+  white1X = displayWidth*2.7/34;
+  white1Y = displayHeight*18.5/20;
   //
-  grey1X = displayWidth*7.2/26;
-  grey1Y = displayHeight*13.53/20;
+  grey1X = displayWidth*0.5/34;
+  grey1Y = displayHeight*19/20;
   //
-  black1X = displayWidth*8.08/26;
-  black1Y = displayHeight*13.53/20;
+  black1X = displayWidth*1.56/34;
+  black1Y = displayHeight*19/20;
+  //
+  randomX = displayWidth*2.7/34;
+  randomY = displayHeight*19/20;
   //
   img1 = loadImage("eraser.png");
   img2 = loadImage("flower.png");
   img3 = loadImage("tumblr-sketch-coloring-page-circle.png");
   img4 = loadImage("butterfly.png");
   //
-  template1X = displayWidth*20.66/26;
-  template1Y = template2Y = template3Y = displayHeight*10/20;
+  template1X = displayWidth*23.15/26;
+  template1Y = template2Y = template3Y = displayHeight*11.7/20;
   templateWidth = displayWidth*1/30;
   templateHeight = displayHeight*1/20;
   //
-  template2X = displayWidth*21.54/26;
+  template2X = displayWidth*24.03/26;
   //
-  template3X = displayWidth*22.42/26;
+  template3X = displayWidth*24.91/26;
   
 }//End population
