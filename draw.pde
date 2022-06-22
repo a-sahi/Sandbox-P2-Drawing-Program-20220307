@@ -362,8 +362,9 @@ void title()
   rect(stopbuttonx, stopbuttony+buttonwidth+10,mutebuttonx-stopbuttonx+buttonwidth ,(mutebuttony-stopbuttony)+buttonwidth+10);
   fill(black);
   textAlign(CENTER,CENTER);
+  title=meta[cSong].title()+"-"+meta[cSong].author();
   textFont(titleFont, 20);
-  text(meta[cSong].title(), titletextx, titletexty);
+  text(title, titletextx, titletexty);
   fill(255);
   
 }

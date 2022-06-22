@@ -59,6 +59,7 @@ int cSong = 0;
 float buttonwidth,playbuttonx,playbuttony,forwardbuttonx,forwardbuttony,nextbuttonx,nextbuttony,backwardbuttonx,backwardbuttony,backbuttonx,backbuttony,mutebuttonx,mutebuttony,stopbuttonx,stopbuttony ;
 float titletextx,titletexty;
 PImage[] img = new PImage[7];
+String title;
 //
 void setup() {
   //Mandatory: Mistaken display orientation should break app, feedback to console and CANVAS
